@@ -1,0 +1,141 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #4a90e2, #9013fe);
+    color: #333;
+}
+
+.container {
+    background-color: white;
+    padding: 30px 40px;
+    /* border-radius: 15px; */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #6e7275;
+    letter-spacing: 2px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+h1::after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 10px;
+    border-top: 3px solid blueviolet;
+    left: 85px;
+    bottom: -5px;
+    border-radius: 50%;
+}
+
+.input-group {
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #4a90e2;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #000;
+    box-shadow: 1.5px 3px 0 #000;
+    /* border-radius: 10px; */
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+input:focus {
+    box-shadow: 3.5px 4px 0 black;
+}
+
+.tip-buttons {
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.tip-btn {
+    padding: 12px 20px;
+    margin: 5px;
+    border: 1px outset #000;
+    /* border-radius: 10px; */
+    background-color: #4a90e2;
+    background-color: #fff;
+    color: blue;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 16px;
+    flex: 1 0 45%;
+}
+
+/* .tip-btn:hover {
+    background-color: #d3e9ff;
+    color: #fff;
+} */
+
+.tip-btn.selected {
+    background-color: #4a90e2;
+    background: linear-gradient(135deg, #4a90e2, #9013fe);
+    background: rgb(0, 35, 255);
+    background: linear-gradient(0deg, rgba(0, 35, 255, 0.4963235294117647) 0%, rgba(11, 186, 247, 1) 100%);
+    color: #fff;
+}
+
+.results p {
+    margin: 15px 0;
+    font-size: 1.4em;
+    color: #4a90e2;
+    text-align: right;
+}
+
+label {
+    text-transform: capitalize;
+}
+
+.pin {
+    width: 100px;
+    height: 100px;
+    background: url('https://cdn-icons-png.flaticon.com/512/4812/4812535.png') no-repeat center center;
+    background-size: cover;
+    position: absolute;
+    top: 20px;
+    right: 900px;
+    transform: rotate(-45deg);
+}
+
+@media (max-width: 400px) {
+    .container {
+        width: 85%;
+        /* height: 70vh; */
+        padding: 20px;
+    }
+
+    /* .tip-btn {
+        flex: 1 0 100%;
+        margin: 5px 0;
+    } */
+}
+
+button {
+    border: 1px solid #000;
+    box-shadow: 1.5px 3px 0 #000;
+    /* border-radius: 10px; */
+    box-sizing: border-box;
+}
